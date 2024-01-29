@@ -192,26 +192,26 @@ export class MainGame {
     playMap ( loading ) {
 
         var messageMgr = new MessageManager();
-        var money = 20000;
-        if(this.difficulty == 1) money = 10000;
-        if(this.difficulty == 2) money = 5000;
+        var money = 200000000;
+        if(this.difficulty == 1) money = 500000000;
+        if(this.difficulty == 2) money = 200000000;
 
         this.gameTools = {
-            airport: new BuildingTool(10000, Tile.AIRPORT, this.map, 6, false),
+            airport: new BuildingTool(1, Tile.AIRPORT, this.map, 6, false),
             bulldozer: new BulldozerTool(this.map),
-            coal: new BuildingTool(3000, Tile.POWERPLANT, this.map, 4, false),
-            commercial: new BuildingTool(100, Tile.COMCLR, this.map, 3, false),
-            fire: new BuildingTool(500, Tile.FIRESTATION, this.map, 3, false),
-            industrial: new BuildingTool(100, Tile.INDCLR, this.map, 3, false),
-            nuclear: new BuildingTool(5000, Tile.NUCLEAR, this.map, 4, true),
+            coal: new BuildingTool(1, Tile.POWERPLANT, this.map, 4, false),
+            commercial: new BuildingTool(1, Tile.COMCLR, this.map, 3, false),
+            fire: new BuildingTool(5, Tile.FIRESTATION, this.map, 3, false),
+            industrial: new BuildingTool(1, Tile.INDCLR, this.map, 3, false),
+            nuclear: new BuildingTool(1, Tile.NUCLEAR, this.map, 4, true),
             park: new ParkTool(this.map),
-            police: new BuildingTool(500, Tile.POLICESTATION, this.map, 3, false),
-            port: new BuildingTool(3000, Tile.PORT, this.map, 4, false),
+            police: new BuildingTool(1, Tile.POLICESTATION, this.map, 3, false),
+            port: new BuildingTool(1, Tile.PORT, this.map, 4, false),
             rail: new RailTool(this.map),
-            residential: new BuildingTool(100, Tile.FREEZ, this.map, 3, false),
+            residential: new BuildingTool(1, Tile.FREEZ, this.map, 3, false),
             road: new RoadTool(this.map),
             query: new QueryTool(this.map),
-            stadium: new BuildingTool(5000, Tile.STADIUM, this.map, 4, false),
+            stadium: new BuildingTool(1, Tile.STADIUM, this.map, 4, false),
             wire: new WireTool(this.map),
         };
 
